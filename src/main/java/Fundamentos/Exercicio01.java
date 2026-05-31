@@ -1,4 +1,4 @@
-package EstruturaCondicional;
+package Fundamentos;
 
 import java.util.Locale;
 import java.util.Scanner;
