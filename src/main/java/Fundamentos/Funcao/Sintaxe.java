@@ -1,4 +1,4 @@
-package Funcao;
+package Fundamentos.Funcao;
 
 import java.util.Scanner;
 

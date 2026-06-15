@@ -1,4 +1,4 @@
-package POO.Ex_biblioteca;
+package POO.exercicios.biblioteca;
 
 public class Biblioteca {
     static void main(String[] args) {

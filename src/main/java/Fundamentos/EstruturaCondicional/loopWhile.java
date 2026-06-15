@@ -1,4 +1,4 @@
-package EstruturaRepeticao;
+package Fundamentos.EstruturaCondicional;
 
 import java.util.Scanner;
 

@@ -33,45 +33,7 @@ Evoluir continuamente como desenvolvedor Java, dominando desde os fundamentos da
 
 ---
 
-## 📁 Estrutura do Repositório
 
-```
-java-studies/
-│
-├── 01-fundamentos/
-│   ├── exercicios/
-│   └── projetos/
-│
-├── 02-poo/
-│   ├── exercicios/
-│   └── projetos/
-│
-├── 03-collections-streams/
-│   ├── exercicios/
-│   └── projetos/
-│
-├── 04-spring-boot/
-│   ├── exercicios/
-│   └── projetos/
-│
-├── 05-design-patterns/
-│   ├── exercicios/
-│   └── projetos/
-│
-├── 06-banco-de-dados-jpa/
-│   ├── exercicios/
-│   └── projetos/
-│
-├── 07-testes-junit/
-│   ├── exercicios/
-│   └── projetos/
-│
-└── 08-estruturas-dados-algoritmos/
-    ├── exercicios/
-    └── projetos/
-```
-
----
 
 ## 🚀 Projetos Práticos
 

@@ -1,4 +1,4 @@
-package POO.Ex_biblioteca;
+package POO.exercicios.biblioteca;
 
 public class Livro {
     private String titulo;

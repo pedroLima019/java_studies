@@ -1,4 +1,4 @@
-package POO;
+package POO.aulas;
 
 public class aula02 {
 

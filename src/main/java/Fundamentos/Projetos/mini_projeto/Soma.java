@@ -1,4 +1,4 @@
-package first_aplication;
+package Fundamentos.Projetos.mini_projeto;
 
 import java.util.Scanner;
 

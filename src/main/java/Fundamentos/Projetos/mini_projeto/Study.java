@@ -1,4 +1,4 @@
-package first_aplication;
+package Fundamentos.Projetos.mini_projeto;
 
 public class Study {
     public static void main(String[] args) {
