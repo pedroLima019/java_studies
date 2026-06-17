@@ -3,7 +3,7 @@ package POO.aulas;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class aula01 {
+public class Classes {
     public static void main(String[] args) {
 
         Locale.setDefault(Locale.US);
