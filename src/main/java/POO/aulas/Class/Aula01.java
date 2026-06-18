@@ -1,9 +1,9 @@
-package POO.aulas;
+package POO.aulas.Class;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Classes {
+public class Aula01 {
     public static void main(String[] args) {
 
         Locale.setDefault(Locale.US);

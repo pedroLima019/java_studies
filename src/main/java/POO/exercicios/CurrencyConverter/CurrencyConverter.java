@@ -1,6 +1,5 @@
 package POO.exercicios.CurrencyConverter;
 
-
 import java.util.Locale;
 import java.util.Scanner;
 
