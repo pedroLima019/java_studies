@@ -6,6 +6,7 @@ public class Carro {
     private String proprietario;
     private boolean acelerar;
 
+    //construtor
     public Carro(String modelo, String proprietario, String cor) {
         this.modelo = modelo;
         this.proprietario = proprietario;
@@ -13,11 +14,16 @@ public class Carro {
 
     }
 
+    // GETTERS: Acessa o atributo private da classe
+    //SETTERS: Muda o valor do atributo da classe
+
+    //metodo para acessar o atributo private da classe
     public String getModelo() {
         System.out.println("Modelo: " + this.modelo);
         return this.modelo;
     }
 
+    // metodo para mudar o valor do atributo da classe
     public void setModelo(String modelo) {
         if (modelo == null || modelo.trim().isEmpty()) {
             System.out.println("Modelo invalido");
