@@ -2,11 +2,31 @@ package POO.exercicios.Exercicio04;
 
 public class Main {
     public static void main(String[] args) {
-        ContaCorrente conta01 = new ContaCorrente(0, true);
-        conta01.abrirConta("CP");
-        conta01.setSaldo(1000);
-        System.out.println("Tipo de Conta: " + conta01.getTipoConta());
-        conta01.depositar(500);
-        System.out.println("Saldo atual: " + conta01.getSaldo());
+        ContaCorrente p1 = new ContaCorrente(500, true);
+        ContaCorrente p2 = new ContaCorrente(1000, true);
+
+        p1.abrirConta("CC");
+        p1.setNumConta(1234);
+        p1.setDono("Pedro");
+        p1.depositar(500);
+        p1.sacar(500);
+        p1.sacar(50);
+        p1.pagarMensal();
+        p1.sacar(20);
+        p1.sacar(10);
+        p1.sacar(6);
+        p1.sacar(1);
+        p1.sacar(1);
+        p1.fecharConta();
+
+        p2.abrirConta("CP");
+        p2.setNumConta(4321);
+        p2.setDono("Lucas");
+        p2.depositar(350);
+
+        p1.estadoAtual();
+        p2.estadoAtual();
+
+
     }
 }

@@ -7,12 +7,23 @@ public class ContaCorrente {
     private double saldo;
     private boolean status;
 
+    public void estadoAtual() {
+        System.out.println("------------------------------");
+        System.out.println("Número conta: " + this.numConta);
+        System.out.println("Dono: " + this.dono);
+        System.out.println("Saldo: " + this.saldo);
+        System.out.println("Status: " + this.status);
+        System.out.println("Deposito: " + this.saldo);
+        System.out.println("------------------------------");
+    }
 
+    // Constructor
     public ContaCorrente(double saldo, boolean status) {
         this.saldo = 0;
         this.status = false;
     }
 
+    //getters and setters
     public int getNumConta() {
         return numConta;
     }
@@ -45,7 +56,7 @@ public class ContaCorrente {
         this.saldo = saldo;
     }
 
-    public boolean isStatus() {
+    public boolean getStatus() {
         return status;
     }
 
@@ -53,6 +64,7 @@ public class ContaCorrente {
         this.status = status;
     }
 
+    //Métodos
     public void abrirConta(String tipoConta) {
         setTipoConta(tipoConta);
         setStatus(true);
@@ -75,11 +87,12 @@ public class ContaCorrente {
             System.out.println("Conta com débito");
         } else {
             setStatus(false);
+            System.out.println("Conta fechada com sucesso ");
         }
     }
 
     public void depositar(double valor) {
-        if (status == true) {
+        if (this.getStatus()) {
             saldo += valor;
             System.out.println("VAlOR " + valor + " depositado com sucesso");
         } else {
@@ -88,9 +101,9 @@ public class ContaCorrente {
     }
 
     public void sacar(double valor) {
-        if (status == true) {
-            if (saldo > valor) {
-                saldo -= valor;
+        if (this.getStatus()) {
+            if (saldo >= valor) {
+                setSaldo(saldo - valor);
                 System.out.println("VAlOR " + valor + " sacado com sucesso");
             } else {
                 System.out.println("Saldo insuficiente");
@@ -109,7 +122,7 @@ public class ContaCorrente {
             valorMensal = 20;
             System.out.println("Valor a pagar: " + valorMensal);
         }
-        if (status == true) {
+        if (this.getStatus()) {
             if (saldo > valorMensal) {
                 setSaldo(getSaldo() - valorMensal);
                 System.out.println("saldo insuficiente");
