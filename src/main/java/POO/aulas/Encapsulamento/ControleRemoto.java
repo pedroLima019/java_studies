@@ -15,37 +15,45 @@ public class ControleRemoto implements Controlador {
 
     // GETTERS and SETTERS
     private int getVolume() {
+
         return volume;
     }
 
     private void setVolume(int volume) {
+
         this.volume = volume;
     }
 
     private boolean getLigado() {
+
         return ligado;
     }
 
     private void setLigado(boolean ligado) {
+
         this.ligado = ligado;
     }
 
     private boolean getTocando() {
+
         return tocando;
     }
 
     private void setTocando(boolean tocando) {
+
         this.tocando = tocando;
     }
 
     //Methods of interface
     @Override
     public void ligar() {
+
         setLigado(true);
     }
 
     @Override
     public void desligar() {
+
         setLigado(false);
     }
 
@@ -53,13 +61,19 @@ public class ControleRemoto implements Controlador {
     public void abrirMenu() {
         System.out.println("Ligado: " + getLigado());
         System.out.println("Volume: " + getVolume());
-        for (int i = 0; i <= this.getVolume(); i += 10) {
-            System.out.print("/");
+
+        if (this.getLigado()) {
+            for (int i = 0; i <= this.getVolume(); i += 10) {
+                System.out.print("/");
+            }
+        } else {
+            System.out.println("O menu só pode abrir se a TV estiver ligada");
         }
     }
 
     @Override
     public void fecharMenu() {
+
         System.out.println("Fechando Menu");
     }
 
