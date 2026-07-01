@@ -9,7 +9,7 @@ public class Arquivo {
     public Arquivo(String nome, String conteudo) {
         this.nome = nome;
         this.conteudo = conteudo;
-        this.tamanhoByte = Arquivo.this.conteudo.length();
+        this.tamanhoByte = conteudo.length();
         this.nivelAcesso = 0;
     }
 
