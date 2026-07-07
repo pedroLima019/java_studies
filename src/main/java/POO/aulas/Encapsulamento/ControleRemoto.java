@@ -47,13 +47,11 @@ public class ControleRemoto implements Controlador {
     //Methods of interface
     @Override
     public void ligar() {
-
         setLigado(true);
     }
 
     @Override
     public void desligar() {
-
         setLigado(false);
     }
 
