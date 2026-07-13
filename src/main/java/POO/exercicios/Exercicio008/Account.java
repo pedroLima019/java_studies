@@ -21,6 +21,7 @@ public class Account {
     }
 
     public String getTitular() {
+
         return titular;
     }
 
@@ -45,7 +46,6 @@ public class Account {
     }
 
     public String toString() {
-        return "Conta " + numConta + " Titular: " + titular + " Saldo: " + String.format(" %.2f", saldo);
+        return "Conta: " + numConta + " Titular: " + titular + " Saldo: " + String.format(" %.2f", saldo);
     }
-
 }
